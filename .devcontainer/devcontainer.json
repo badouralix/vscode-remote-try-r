@@ -1,0 +1,55 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json
+{
+	"name": "R Sample",
+
+	// Switch between "dockerFile" and "image" to build the image locally or use the pre-build image.
+	// "dockerFile": "Dockerfile",
+	"image": "badouralix/vscode-remote-try-r:latest",
+
+	"build": {
+		"args": {
+			// Set R_VARIANT build arg to override the R version to be used
+			// 40 for R 4.0 (default), 35 for R 3.6
+			"R_VARIANT": "40",
+			// Set other build args
+			"COMMON_SCRIPT_SHA": "dev-mode",
+			"COMMON_SCRIPT_SOURCE": "https://raw.githubusercontent.com/microsoft/vscode-dev-containers/master/script-library/common-debian.sh",
+			"INSTALL_ZSH": "false",
+			"USER_GID": "1000",
+			"USER_UID": "1000",
+			"USERNAME": "vscode",
+		},
+	},
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"r.rterm.linux": "/usr/local/bin/radian",
+		"r.sessionWatcher": true,
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"grapecity.gc-excelviewer",
+		"ikuyadeu.r",
+		// "mikhail-arkhipov.r",
+		"reditorsupport.r-lsp",
+	],
+
+	// Use "forwardPorts" to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use "postCreateCommand" to run commands after the container is created.
+	"postCreateCommand": "R --version",
+
+	// Uncomment to use Docker from inside the container. See https://aka.ms/vscode-remote/samples/docker-in-docker.
+	// "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
+
+	"runArgs": [
+		"--rm",
+		// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
+		// "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined",
+	],
+
+	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "vscode",
+}
