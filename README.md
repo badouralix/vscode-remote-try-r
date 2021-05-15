@@ -5,7 +5,6 @@
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/vscode-remote-try-r?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/vscode-remote-try-r)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/vscode-remote-try-r?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/vscode-remote-try-r)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/vscode-remote-try-r?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/vscode-remote-try-r)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/vscode-remote-try-r?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/vscode-remote-try-r)
 
 This is a sample project that lets you try out the **[VS Code Remote - Containers](https://aka.ms/vscode-remote/containers)** extension in a few easy steps.
 
