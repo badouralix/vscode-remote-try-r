@@ -1,6 +1,6 @@
 # Try Out Development Containers: R
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/vscode-remote-try-r?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/vscode-remote-try-r)
+[![Github Actions Buildx](https://github.com/badouralix/vscode-remote-try-r/actions/workflows/buildx.yaml/badge.svg)](https://github.com/badouralix/vscode-remote-try-r/actions/workflows/buildx.yaml)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/vscode-remote-try-r?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/vscode-remote-try-r)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/vscode-remote-try-r?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/vscode-remote-try-r)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/vscode-remote-try-r?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/vscode-remote-try-r)
