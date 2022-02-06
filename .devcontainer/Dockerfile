@@ -54,7 +54,7 @@ RUN apt-get update && \
 ARG R_VARIANT=40
 
 # Split installation in different layers to leverage caches
-RUN APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=true apt-key adv --keyserver keyserver.ubuntu.com --recv-key "E19F5F87128899B192B1A2C2AD5F960A256A04AF" && \
+RUN APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=true apt-key adv --keyserver keyserver.ubuntu.com --recv-key "95C0FAF38DB3CCAD0C080A7BDC78B2DDEABC47B7" && \
     #
     # Install r-base from https://cloud.r-project.org/bin/linux/debian/
     echo "deb http://cloud.r-project.org/bin/linux/debian bullseye-cran$R_VARIANT/" > /etc/apt/sources.list.d/r-project.list && \
